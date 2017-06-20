@@ -1,0 +1,1 @@
+Schreibe einen Webserver, der eine statische HTML-Datei ausliefert.

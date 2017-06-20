@@ -41,3 +41,13 @@ const obj2 = {
   }
 }
 */
+
+var a = 1;
+
+if (a == true) {
+  console.log('true');
+  console.log('true');
+} else {
+
+  console.log('not so true');
+}
