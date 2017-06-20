@@ -1,11 +1,17 @@
+const config = require('./conf');
+
 const express = require('express');
 
 const app = express();
 
+app.use(express.static('public'));
+
 app.get('/', (req, res) => {
-  res.send('Hello Client');
+  const data = 'Hello Client';
+  res.send(data);
 });
 
-app.listen(8081, () => {
+
+app.listen(config.port, () => {
   console.log('listening');
 });
