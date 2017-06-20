@@ -20,3 +20,24 @@ const klaus = new User('Klaus', 'Müller');
 console.log(klaus.getFullname());
 
 sayHello('Maria');
+
+/*
+const obj = {
+  name: 'klaus',
+  doIt() {
+    setTimeout(() => {
+      this.name;
+    }, 1000);
+  }
+}
+
+const obj2 = {
+  doIt() {
+    this
+    setTimeout(function () {
+      // this ist nicht das äußere this
+      this.name;
+    }, 1000);
+  }
+}
+*/
