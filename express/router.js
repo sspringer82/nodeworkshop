@@ -7,6 +7,7 @@ class Router {
 
   initRoutes() {
     this.app.get('/user', controller.getUser);
+    this.app.get('/hello/:name', controller.sayHello);
   }
 }
 

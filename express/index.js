@@ -4,6 +4,8 @@ const Router = require('./router');
 
 const app = express();
 
+app.set('view engine', 'ejs');
+
 app.use(express.static('public'));
 
 const router = new Router(app);
