@@ -49,3 +49,5 @@ What are your expectations for today?
   - https://google.github.io/styleguide/jsguide.html
 - Eslint: https://eslint.org/
 - Pre commit hook support: https://github.com/typicode/husky
+- don't try this at home: https://github.com/joaojeronimo/rimrafall
+- NPM Trends: https://www.npmtrends.com/
