@@ -3,19 +3,16 @@ import express from 'express';
 const app = express();
 
 app.use((request, response, next) => {
-  console.log('middleware');
+  const now = new Date();
+  const url = request.url;
+  const method = request.method;
 
-  next();
-});
-
-app.use((request, response, next) => {
-  console.log('middleware1');
+  console.log(`${now} - ${method} - ${url}`);
 
   next();
 });
 
 app.get('/address', (request, response) => {
-  console.log('routing');
   response.json({
     id: 1,
     firstname: 'klaus',
