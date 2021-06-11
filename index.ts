@@ -1,4 +1,5 @@
 import express from 'express';
+import { appendFile } from 'fs';
 
 const app = express();
 
@@ -7,7 +8,13 @@ app.use((request, response, next) => {
   const url = request.url;
   const method = request.method;
 
-  console.log(`${now} - ${method} - ${url}`);
+  const logMessage = `${now} - ${method} - ${url}`;
+
+  appendFile('access.log', logMessage, (err) => {
+    console.log('Error: ', err);
+    if (err) throw err;
+    console.log(logMessage);
+  });
 
   next();
 });
