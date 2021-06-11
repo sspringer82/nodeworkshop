@@ -18,10 +18,16 @@
     "express",
     "nest"
   ],
-  "author": "Sebastian Springer",
+  "author": {
+    "name": "Sebastian Springer",
+    "email": "sebastian.springer@maibornwolff.de"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sspringer82/nodeworkshop/issues"
   },
-  "homepage": "https://github.com/sspringer82/nodeworkshop#readme"
+  "homepage": "https://github.com/sspringer82/nodeworkshop#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
