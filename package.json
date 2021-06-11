@@ -1,0 +1,27 @@
+{
+  "name": "nodeworkshop",
+  "version": "0.0.1",
+  "description": "My fancy address list",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sspringer82/nodeworkshop.git"
+  },
+  "keywords": [
+    "samle",
+    "node",
+    "application",
+    "web",
+    "express",
+    "nest"
+  ],
+  "author": "Sebastian Springer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sspringer82/nodeworkshop/issues"
+  },
+  "homepage": "https://github.com/sspringer82/nodeworkshop#readme"
+}
