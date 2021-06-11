@@ -1,7 +1,10 @@
 import express from 'express';
 import { appendFile } from 'fs';
+import morgan from 'morgan';
 
 const app = express();
+
+app.use(morgan('combined'));
 
 app.use((request, response, next) => {
   const now = new Date();
