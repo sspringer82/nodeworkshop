@@ -1,10 +1,14 @@
 import express from 'express';
-import { appendFile } from 'fs';
+import { appendFile, createWriteStream } from 'fs';
 import morgan from 'morgan';
+import { join } from 'path';
 
 const app = express();
 
-app.use(morgan('combined'));
+const accessLogStream = createWriteStream(join(__dirname, 'access.log'), {
+  flags: 'a',
+});
+app.use(morgan('combined', { stream: accessLogStream }));
 
 app.use((request, response, next) => {
   const now = new Date();
@@ -13,7 +17,7 @@ app.use((request, response, next) => {
 
   const logMessage = `${now} - ${method} - ${url}`;
 
-  appendFile('access.log', logMessage, (err) => {
+  appendFile('access2.log', logMessage, (err) => {
     console.log('Error: ', err);
     if (err) throw err;
     console.log(logMessage);
