@@ -36,6 +36,12 @@ What are your expectations for today?
 - `npm install typescript`
 - `npx tsc --init` => tsconfig.json
 
+# Express
+
+- `npm i express`
+- `npm i -D @types/express`
+- create your index.ts file and go
+
 # Links
 
 - Node: https://nodejs.org/
@@ -51,3 +57,4 @@ What are your expectations for today?
 - Pre commit hook support: https://github.com/typicode/husky
 - don't try this at home: https://github.com/joaojeronimo/rimrafall
 - NPM Trends: https://www.npmtrends.com/
+- Nodemon (restart process automatically): https://nodemon.io/

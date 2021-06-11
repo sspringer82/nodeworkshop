@@ -5,7 +5,7 @@ import { createServer } from 'http';
 import User from './user.mjs';
 
 const server = http.createServer((request, response) => {
-  const klaus = new User('klaus', 'Müller');
+  const klaus = new User('Klaus', 'Müller');
   response.end(`Hello ${klaus.getFullName()}`);
 });
 
