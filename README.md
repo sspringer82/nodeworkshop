@@ -42,6 +42,15 @@ What are your expectations for today?
 - `npm i -D @types/express`
 - create your index.ts file and go
 
+# Debugging
+
+- Start your application with `--inspect-brk`: `node --inspect-brk index.js`
+- Open Chrome: `chrome://inspect`
+- Go for the "remote target"
+- IDE
+  - VSCode: https://code.visualstudio.com/docs/nodejs/nodejs-debugging
+  - WebStorm: https://www.jetbrains.com/help/webstorm/running-and-debugging-node-js.html
+
 # Links
 
 - Node: https://nodejs.org/
