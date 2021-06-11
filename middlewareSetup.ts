@@ -13,4 +13,5 @@ export default function (app: Express): void {
   app.use(cors());
   app.use(helmet());
   app.use(express.static('public'));
+  app.use(express.json());
 }

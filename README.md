@@ -42,6 +42,13 @@ What are your expectations for today?
 - `npm i -D @types/express`
 - create your index.ts file and go
 
+# Database
+
+- install the driver (e.g. npm i pg)
+- connect to the database (reuse connections if possible)
+  - do not store database passwords in your code!
+- query!
+
 # Debugging
 
 - Start your application with `--inspect-brk`: `node --inspect-brk index.js`
@@ -68,3 +75,7 @@ What are your expectations for today?
 - NPM Trends: https://www.npmtrends.com/
 - Nodemon (restart process automatically): https://nodemon.io/
 - https://www.npmjs.com/package/ts-node-dev
+- https://node-postgres.com/
+- Authentication:
+  - http://www.passportjs.org/
+  - https://github.com/auth0/express-jwt
