@@ -22,7 +22,7 @@ app.use((request, response, next) => {
 app.get('/address', (request, response) => {
   response.json({
     id: 1,
-    firstname: 'klaus',
+    firstname: 'Klaus',
     lastname: 'müller',
     email: 'klaus@mueller.com',
   });

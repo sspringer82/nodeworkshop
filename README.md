@@ -67,3 +67,4 @@ What are your expectations for today?
 - don't try this at home: https://github.com/joaojeronimo/rimrafall
 - NPM Trends: https://www.npmtrends.com/
 - Nodemon (restart process automatically): https://nodemon.io/
+- https://www.npmjs.com/package/ts-node-dev
