@@ -31,6 +31,11 @@ What are your expectations for today?
 - own modules (files): `const user = require('./user')`; => ./user.js
   - `import user from 'user';`
 
+# TypeScript
+
+- `npm install typescript`
+- `npx tsc --init` => tsconfig.json
+
 # Links
 
 - Node: https://nodejs.org/
