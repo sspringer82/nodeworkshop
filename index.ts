@@ -1,15 +1,9 @@
-import express, { Express } from 'express';
-import morgan from 'morgan';
-import setUpLogger from './logger';
+import express from 'express';
+import middlewareSetup from './middlewareSetup';
 
 const app = express();
 
-// setUpLogger(app, setUpMorgan);
-// setUpLogger(app, setUpCustomLogger);
-// setUpLogger(app, (app: Express) => {
-//   app.use(morgan('combined'));
-// });
-setUpLogger(app);
+middlewareSetup(app);
 
 app.get('/address', (request, response) => {
   response.json({
